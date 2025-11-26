@@ -55,13 +55,15 @@ gold prices for end users without needing additional translation.
 Below is an example of how you might configure this server in a
 `claude_desktop_config.json` (or similar MCP config file):
 
-```json
-"mcpServers": {
-  "gia-vang-giao-thuy": {
-    "command": "python",
-    "args": [
-      "/Users/duypt/Documents/Coding/gold-price-mcp/mcp_server.py"
-    ]
+```python
+{
+  "mcpServers": {
+    "gia-vang-giao-thuy": {
+      "command": "python",
+      "args": [
+        "/Users/duypt/Documents/Coding/gold-price-mcp/mcp_server.py"
+      ]
+    }
   }
 }
 ```
