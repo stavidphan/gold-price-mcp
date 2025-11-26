@@ -50,4 +50,26 @@ When the agent calls this tool, it will receive **Vietnamese** text that include
 AI agents can then use this Vietnamese content directly to explain or compare
 gold prices for end users without needing additional translation.
 
+### Example MCP configuration (Claude Desktop)
+
+Below is an example of how you might configure this server in a
+`claude_desktop_config.json` (or similar MCP config file):
+
+```json
+{
+  "mcpServers": {
+    "gia-vang-giao-thuy": {
+      "command": "python",
+      "args": [
+        "/Users/duypt/Documents/Coding/gold-price-mcp/mcp_server.py"
+      ]
+    }
+  }
+}
+```
+
+After this, restart Claude Desktop and you should see the MCP server
+`gia-vang-giao-thuy` available, exposing the tool
+`fetch_gia_vang_giao_thuy` for use in your chats.
+
 
